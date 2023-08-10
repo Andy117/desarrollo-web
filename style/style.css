@@ -54,7 +54,7 @@ input:focus {
 {
     width: 100%;
     min-height: 100vh;
-    background: #eceaff;
+    background: #b1b9cb;
 }
 
 .main-menu nav
@@ -94,7 +94,7 @@ input:focus {
 }
 .sub-menu
 {
-    background: #fff;
+    background: #b1b9cb;
     padding: 20px;
     margin: 10px;
 }
@@ -143,7 +143,7 @@ input:focus {
 .sub-menu-link img
 {
     width: 40px;
-    background: #e5e5e5;
+    background: #b1b9cb;
     border-radius: 50%;
     padding: 8px;
     margin-right: 15px;
@@ -175,6 +175,12 @@ header{
     padding: 30px 20px;
     z-index: 10;
 }
+.item{
+    scroll-margin-top: 15ex;
+}
+html{
+    scroll-behavior: smooth;
+}
 header.abajo{
     background: #3F566D;
     padding: 15px 20px;
@@ -199,7 +205,7 @@ header ul li a{
     transition: 0.7s;
 }
 header.abajo ul li a{
-    color: #e1e1e1;
+    color: #b1b9cb;
 }
 /*end of Menu nav styles*/
 .div-container-images {
@@ -236,7 +242,7 @@ header.abajo ul li a{
     width: 100%;
     height: 600px;
     gap: 2rem;
-    padding: 30px 30px 30px 30px;
+    padding: 110px 110px 110px 110px;
 }
 
 .btn-outline-success {
@@ -366,6 +372,36 @@ header.abajo ul li a{
     color: white;
     cursor: pointer;
 }
+/*buttoms contac*/
+section1 {  
+    display: flex;
+    height: 250px;
+}
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons a {
+    margin: auto;
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #3F566D;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+}
+
 /*footer*/
 footer{
     background: #3F566D;
@@ -385,7 +421,7 @@ footer{
 .footer-content h3{
     font-size: 1.8rem;
     font-weight: 400;
-    text-transform: capitalize;
+    
     line-height: 3rem;
 }
 .footer-content p{
@@ -424,7 +460,7 @@ footer{
 .footer-bottom p{
     font-size: 14px;
     word-spacing: 2px;
-    text-transform: capitalize;
+    
 }
 .footer-bottom span{
     text-transform: uppercase;
@@ -475,4 +511,6 @@ footer{
         transform: scale(2.5);
     }
 }
+
+
 
