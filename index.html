@@ -8,6 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="\style\style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
 <body style="background: #b1b9cb;">
   <div class="main-menu">
     <nav>
+      <header>
       <img src="img/imgs_nav/logo-web.png" class="logo">
       <ul>
         <li><a href="#">Inicio</a></li>
@@ -56,7 +58,10 @@
         </div>
       </div>
     </nav>
+      </header>
+      
   </div>
+
   <div class="class-info-conteiner">
     <div style="display: flex; width: 100%; height: 33%;">
       <div style="width: 50%;">
@@ -122,8 +127,27 @@
       {
         subMenu.classList.toggle("open-menu");
       }
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("abajo", window.scrollY>0);
+      })
   </script>
+  <footer>
+    <div class="footer-content">
+      <h3>miPCideal</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic soluta vel sunt voluptatibus, odit eaque, ipsum perspiciatis porro veniam saepe commodi, quidem deserunt illo dolores officiis ea sed excepturi.</p>
+      <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2023 miPCideal. designed by <span>group 2</span></p>
+    </div>
+  </footer>
   <a href="https://wa.me/50230840992" class="btn-whatsapp">
     <img src="/img/icon-whatsapp.svg" alt="Contactar por WhatsApp">
+    
 </body>
 </html>

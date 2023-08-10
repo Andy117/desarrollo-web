@@ -1,4 +1,8 @@
 /* TODO CLASES OBJETOS GENERALES */
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
 /*     font-family: 'Lucida Sans';
     background: #6c757d;
@@ -51,14 +55,10 @@ input:focus {
     width: 100%;
     min-height: 100vh;
     background: #eceaff;
-    color: #525252;
 }
 
 .main-menu nav
 {
-    background: #1a1a1a;
-    width: 100%;
-    padding: 10px 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;   
@@ -67,7 +67,7 @@ input:focus {
 
 .logo
 {
-    width: 300px;
+    width: 170px;
 }
 
 .user-pic
@@ -77,26 +77,6 @@ input:focus {
     cursor: pointer;
     margin-left: 30px;
 }
-
-.main-menu nav ul
-{
-    width: 100%;
-    text-align: right;
-}
-
-.main-menu nav ul li
-{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-}
-
-.main-menu nav ul li a
-{
-    color: #fff;
-    text-decoration: none;
-}
-
 .sub-menu-wrap
 {
     position: absolute;
@@ -184,6 +164,43 @@ input:focus {
 {
     font-weight: 600;
 }
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+}
+header.abajo{
+    background: #3F566D;
+    padding: 15px 20px;
+}
+header ul{
+    position: relative;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    font-family: Helvetica;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1a1a1a;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+header.abajo ul li a{
+    color: #e1e1e1;
+}
 /*end of Menu nav styles*/
 .div-container-images {
     display: flex;
@@ -255,6 +272,7 @@ input:focus {
     position: relative;
     cursor: pointer;
 }
+
 
 /* .price-item:hover , .price-item-max:hover {
     cursor: default !important;
@@ -347,6 +365,71 @@ input:focus {
     font-weight: 600;
     color: white;
     cursor: pointer;
+}
+/*footer*/
+footer{
+    background: #3F566D;
+    height: auto;
+    width: 100vw;
+    font-family: Helvetica;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: aqua;
+}
+.footer-bottom{
+    background: #3F566D;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
 }
 /*Boton wpp*/
 .btn-whatsapp {
