@@ -18,61 +18,48 @@
   <div class="main-menu">
     <nav>
       <header>
-      <img src="img/imgs_nav/logo-web.png" class="logo" class="item">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#Equipos">Equipos</a></li>
-        <li><a href="#Nosotros">Sobre nosotros</a></li>
-        <li><a href="#Contactanos">Contactanos</a></li>
-      </ul>
-      <img src="img/imgs_nav/user-logo.png" class="user-pic" onclick="toggleMenu()">
+        <img src="img/imgs_nav/logo-web.png" class="logo" class="item">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#Equipos">Equipos</a></li>
+          <li><a href="#Nosotros">Sobre nosotros</a></li>
+          <li><a href="#Contactanos">Contactanos</a></li>
+        </ul>
+        <img src="img/imgs_nav/user-logo.png" class="user-pic" onclick="toggleMenu()">
 
-      <!--INICIO SUB MENU USUARIO-->
-      <div class="sub-menu-wrap" id="subMenu">
-        <div class="sub-menu">
-          <div class="user-info">
-            <img src="img/imgs_nav/user-logo.png" alt="">
-            <h2>User Name</h2>
+        <!--INICIO SUB MENU USUARIO-->
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="img/imgs_nav/user-logo.png" alt="">
+              <h2>User Name</h2>
+            </div>
+            <hr>
+            <a href="#" class="sub-menu-link">
+              <img src="img/imgs_nav/user-conf.jpg">
+              <p>Editar Perfil</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="img/imgs_nav/settings.png">
+              <p>Configuración y Privacidad</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="img/imgs_nav/about.png">
+              <p>Ayuda y Soporte</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="img/imgs_nav/exit.png">
+              <p>Cerrar Sesión</p>
+              <span>></span>
+            </a>
           </div>
-          <hr>
-          <a href="#" class="sub-menu-link">
-            <img src="img/imgs_nav/user-conf.jpg">
-            <p>Editar Perfil</p>
-            <span>></span>
-          </a>
-          <a href="#" class="sub-menu-link">
-            <img src="img/imgs_nav/settings.png">
-            <p>Configuración y Privacidad</p>
-            <span>></span>
-          </a>
-          <a href="#" class="sub-menu-link">
-            <img src="img/imgs_nav/about.png">
-            <p>Ayuda y Soporte</p>
-            <span>></span>
-          </a>
-          <a href="#" class="sub-menu-link">
-            <img src="img/imgs_nav/exit.png">
-            <p>Cerrar Sesión</p>
-            <span>></span>
-          </a>
         </div>
-      </div>
-    </nav>
-      </header>
+      </nav>
+    </header>
   </div>
-<div class="container section_2" class="item" id="Nosotros">
-  <h2 class="Sobre-Nosotros-tittle">Sobre Nosotros</h2>
-  <div class="us">
-    <div class="nosotros-parrafo">
-    <p class="paragraph">Orientamos a las personas para que sepan que computadora les favorece segun sus necesidades.</p>
-    <p class="paragraph">Asesoramos a los que juegan de todo y hacen de todo.</p>
-    <p class="paragraph">Proporcionamos las caracteristicas y precio de las computadoras para ayudarte a elegir. </p>
-    </div>
-  <div class="nosotros-img">
-    <img src="\img\imgs_menu\about-us.png" alt="" class="about-us-img">
-  </div>
-  </div>
-</div>
     </div>
   <div class="class-info-conteiner" class="item" id="inicio">
     <div style="display: flex; width: 100%; height: 33%;">
@@ -109,41 +96,16 @@
     <img src="\img\imgs_menu\docencia.jpg" alt="No disponible" onclick="redireccionareducacion()">
   </section>
 
-  <!-- TODO SCRIPTS -->
-  <!-- REDIRECCCION DE PANTALLAS -->
-  <script>
-      function redireccionarbasicos() {
-          window.location.href = '/html/cat_basicos.html';
-      }
-      function redireccionaruniversidad() {
-          window.location.href = '/html/cat_universidad.html';
-      }
-      function redireccionaroficina() {
-          window.location.href = '/html/cat_oficina.html';
-      }
-      function redireccionarprogra() {
-          window.location.href = '/html/cat_progra.html';
-      }
-      function redireccionargaming() {
-          window.location.href = '/html/cat_gaming.html';
-      }
-      function redireccionarmineria() {
-          window.location.href = '/html/cat_cripto.html';
-      }
-      function redireccionareducacion() {
-          window.location.href = '/html/cat_educacion.html';
-      }
-      
-      let subMenu = document.getElementById("subMenu");
-      function toggleMenu()
-      {
-        subMenu.classList.toggle("open-menu");
-      }
-      window.addEventListener("scroll", function(){
-        var header = document.querySelector("header");
-        header.classList.toggle("abajo", window.scrollY>0);
-      })
-  </script>
+  <div class="section_2" id="Nosotros">
+      <img src="\img\imgs_menu\about-us.png" alt="Img about us">
+      <div class="us-info">
+        <h2>Sobre Nosotros</h2>
+        <p>Orientamos a las personas para que sepan que computadora les favorece segun sus necesidades.</p>
+        <p>Asesoramos a los que juegan de todo y hacen de todo.</p>
+        <p>Proporcionamos las caracteristicas y precio de las computadoras para ayudarte a elegir. </p>
+      </div>
+  </div>
+  
   <section1 class="buttons" class="item" id="Contactanos">
     <a href="#" class="fa fa-facebook"></a>
     <a href="#" class="fa fa-twitter"></a>
@@ -165,8 +127,44 @@
       <p>copyright &copy;2023 miPCideal. designed by <span>group 2</span></p>
     </div>
   </footer>
-  <a href="https://wa.me/50230840992" class="btn-whatsapp">
+  <a href="https://wa.me/50230840992" class="btn-whatsapp" target="_blank">
     <img src="/img/icon-whatsapp.svg" alt="Contactar por WhatsApp">
     
 </body>
+
+  <!-- TODO SCRIPTS -->
+  <!-- REDIRECCCION DE PANTALLAS -->
+  <script>
+    function redireccionarbasicos() {
+        window.location.href = '/html/cat_basicos.html';
+    }
+    function redireccionaruniversidad() {
+        window.location.href = '/html/cat_universidad.html';
+    }
+    function redireccionaroficina() {
+        window.location.href = '/html/cat_oficina.html';
+    }
+    function redireccionarprogra() {
+        window.location.href = '/html/cat_progra.html';
+    }
+    function redireccionargaming() {
+        window.location.href = '/html/cat_gaming.html';
+    }
+    function redireccionarmineria() {
+        window.location.href = '/html/cat_cripto.html';
+    }
+    function redireccionareducacion() {
+        window.location.href = '/html/cat_educacion.html';
+    }
+    
+    let subMenu = document.getElementById("subMenu");
+    function toggleMenu()
+    {
+      subMenu.classList.toggle("open-menu");
+    }
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("abajo", window.scrollY>0);
+    })
+</script>
 </html>
