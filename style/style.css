@@ -53,7 +53,7 @@ input:focus {
 .main-menu
 {
     width: 100%;
-    min-height: 100vh;
+    min-height: 20vh;
     background: #b1b9cb;
 }
 
@@ -207,10 +207,14 @@ header ul li a{
 header.abajo ul li a{
     color: #b1b9cb;
 }
-/*end of Menu nav styles*/
-.div-container-images {
-    display: flex;
-    width: 100%;
+/*Sobre Nosotros */
+.Nosotros{
+    background: #3F566D;
+    height: 400px;
+}
+.mision-img{
+    height: 120px;
+    margin-top: 110px;
 }
 
 .image-in-container {
@@ -243,6 +247,7 @@ header.abajo ul li a{
     height: 600px;
     gap: 2rem;
     padding: 110px 110px 110px 110px;
+    
 }
 
 .btn-outline-success {
