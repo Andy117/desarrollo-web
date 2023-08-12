@@ -417,12 +417,13 @@ section1 {
 footer{
     background: #3F566D;
     height: auto;
-    width: 100vw;
+    width: 100%;
     font-family: Helvetica;
     padding-top: 40px;
     color: #fff;
 }
 .footer-content{
+    width: 100% !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -464,7 +465,7 @@ footer{
 }
 .footer-bottom{
     background: #3F566D;
-    width: 100vw;
+    width: 100%;
     padding: 20px 0;
     text-align: center;
 }
