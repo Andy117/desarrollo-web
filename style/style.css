@@ -416,7 +416,7 @@ section1 {
 /*footer*/
 footer{
     background: #3F566D;
-    height: auto;
+    height: 250px;
     width: 100vw;
     font-family: Helvetica;
     padding-top: 40px;
