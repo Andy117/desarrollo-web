@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="\style\style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Tu primer ordenador?</title>
+</head>
+
+<body style="background: #b1b9cb;">
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">x</span>
+      <p>En construcción... :D</p>
+    </div>
+  </div>
+
+  <div class="main-menu">
+    <nav>
+      <header>
+        <img src="img/imgs_nav/logo-web.png" class="logo" class="item" alt="Logo-img">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#Equipos">Equipos</a></li>
+          <li><a href="#Nosotros">Sobre nosotros</a></li>
+          <li><a href="#Contactanos">Contactanos</a></li>
+        </ul>
+        <img src="img/imgs_nav/user-logo.png" class="user-pic" alt="User-logo" onclick="toggleMenu()">
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="img/imgs_nav/user-logo.png" alt="User-photo">
+              <h2>User Name</h2>
+            </div>
+            <hr>
+            <a href="#" id="myBtn" class="sub-menu-link">
+              <img src="img/imgs_nav/user-conf.jpg" alt="Edit-Profile">
+              <p>Editar Perfil</p>
+              <span>></span>
+            </a>
+            <a href="#" id="myBtn2" class="sub-menu-link">
+              <img src="img/imgs_nav/settings.png" alt="Settings and privacy">
+              <p>Configuración y Privacidad</p>
+              <span>></span>
+            </a>
+            <a href="#" id="myBtn3" class="sub-menu-link">
+              <img src="img/imgs_nav/about.png" alt="Help and support">
+              <p>Ayuda y Soporte</p>
+              <span>></span>
+            </a>
+            <a href="html/logins/login_usuario.html" class="sub-menu-link">
+              <img src="img/imgs_nav/exit.png" alt="Log-out">
+              <p>Cerrar Sesión</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </header>
+    </nav>
+  </div>
+
+  <div class="class-info-conteiner" class="item" id="inicio">
+    <div style="display: flex; width: 100%; height: 33%;">
+      <div style="width: 50%;">
+        <div style="display: grid; font-size: 75px; height: 50%; justify-content: center; align-items: center; color: #253443;">¡Hola!</div>
+        <div style="display: grid;  font-size: 30px; height: 50%; justify-content: center; color: #253443;"><br>¿Ya sabes que laptop comprar?</div>
+      </div>
+      <div style="display: grid; width: 50%; justify-content: center; align-items: center;">
+        <img class="dude-img img-on-text" src="\img\imgs_menu\dude.png" alt="No disponible">
+      </div>
+    </div>
+    <div style="display: flex; width: 100%; height: 33%;">
+      <div style="justify-content: center; width: 50%; align-items: center; display: grid;">
+        <img class="dude-img" src="\img\imgs_menu\pc.png" alt="No disponible">
+      </div>
+      <div style="font-size: 20px; font-weight: 400; text-align: center; width: 50%; display: grid; justify-content: center; align-items: center; color: #253443;">Sabemos que tomar decisiones es difícil y más cuando se trata de adquirir una nueva laptop para tu día a día, por eso, hemos decidió hacerlo más fácil para ti.</div>
+    </div>
+    <div style="display: flex; width: 100%; height: 33%;">
+      <div style="font-size: 20px; font-weight: 400; text-align: center; width: 50%; display: grid; justify-content: center; align-items: center; color: #253443;">
+        A continuación veras una serie de categorías en las cuales podrás ver varías opciones de laptops, podrás ajustar las opciones en base a tu presupuesto y además te brindaremos información adicional sobre que puedes hacer con la laptop que selecciones, así que ¡comencemos!
+      </div>
+      <div style="justify-content: center; width: 50%; align-items: center; display: grid;">
+        <img class="dude-img" src="\img\imgs_menu\money.png" alt="No disponible">
+      </div>
+    </div>
+  </div>
+
+  <section class="item" id="Equipos">
+    <img src="\img\imgs_menu\basicos.jpg" alt="No disponible" onclick="redireccionarbasicos()">
+    <img src="\img\imgs_menu\universidad.jpg" alt="No disponible" onclick="redireccionaruniversidad()">
+    <img src="\img\imgs_menu\oficina.jpg" alt="No disponible" onclick="redireccionaroficina()">
+    <img src="\img\imgs_menu\trabajo_porgramacion.jpg" alt="No disponible" onclick="redireccionarprogra()">
+    <img src="\img\imgs_menu\gaming.jpg" alt="No disponible" onclick="redireccionargaming()">
+    <img src="\img\imgs_menu\mineria.jpg" alt="No disponible" onclick="redireccionarmineria()">
+    <img src="\img\imgs_menu\docencia.jpg" alt="No disponible" onclick="redireccionareducacion()">
+  </section>
+
+  <div class="section_2" id="Nosotros">
+    <img src="\img\imgs_menu\about-us.png" alt="Img about us">
+    <div class="us-info">
+      <h2>Sobre Nosotros</h2>
+      <p>Orientamos a las personas para que sepan que computadora les favorece segun sus necesidades.</p>
+      <p>Asesoramos a los que juegan de todo y hacen de todo.</p>
+      <p>Proporcionamos las caracteristicas y precio de las computadoras para ayudarte a elegir. </p>
+    </div>
+  </div>
+  
+  <section1 class="buttons" class="item" id="Contactanos">
+    <a href="#" class="fa fa-facebook"><p class="btnFacebook">Facebook</p></a>
+    <a href="#" class="fa fa-twitter"><p id="btnTwitter">Twitter</p></a>
+    <a href="#" class="fa fa-instagram"><p id="btnIg">Instagram</p></a>
+    <a href="#" class="fa fa-telegram"><p id="btnTelegram">Telegram</p></a>
+  </section1>
+
+  <footer>
+
+    <div class="footer-content">
+      <h3>miPCideal</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic soluta vel sunt voluptatibus, odit eaque, ipsum perspiciatis porro veniam saepe commodi, quidem deserunt illo dolores officiis ea sed excepturi.</p>
+      <ul class="socials">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <p>copyright &copy;2023 miPCideal. designed by <span>group 2</span></p>
+    </div>
+
+  </footer>
+
+  <a href="https://wa.me/50230840992" class="btn-whatsapp" target="_blank">
+  
+  <img src="/img/icon-whatsapp.svg" alt="Contactar por WhatsApp">
+    
+</body>
+
+<!-- TODO SCRIPTS -->
+<!-- REDIRECCCION DE PANTALLAS -->
+
+<script>
+  function redireccionarbasicos() {
+      window.location.href = '/html/cat_basicos.html';
+  }
+  function redireccionaruniversidad() {
+      window.location.href = '/html/cat_universidad.html';
+  }
+  function redireccionaroficina() {
+      window.location.href = '/html/cat_oficina.html';
+  }
+  function redireccionarprogra() {
+      window.location.href = '/html/cat_progra.html';
+  }
+  function redireccionargaming() {
+      window.location.href = '/html/cat_gaming.html';
+  }
+  function redireccionarmineria() {
+      window.location.href = '/html/cat_cripto.html';
+  }
+  function redireccionareducacion() {
+      window.location.href = '/html/cat_educacion.html';
+  }
+  
+  let subMenu = document.getElementById("subMenu");
+  function toggleMenu()
+  {
+    subMenu.classList.toggle("open-menu");
+  }
+  window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("abajo", window.scrollY>0);
+  })
+
+  var modal = document.getElementById("myModal");
+
+  var btn = document.getElementById("myBtn");
+  var btn2 = document.getElementById("myBtn2");
+  var btn3 = document.getElementById("myBtn3");
+
+  var span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function()
+  {
+    modal.style.display = "block";
+    subMenu.classList.toggle("open-menu");
+  }
+  btn2.onclick = function()
+  {
+    modal.style.display = "block";
+    subMenu.classList.toggle("open-menu");
+  }
+  btn3.onclick = function()
+  {
+    modal.style.display = "block";
+    subMenu.classList.toggle("open-menu");
+  }
+
+  span.onclick = function()
+  {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event)
+  {
+    if(event.target == modal)
+    {
+      modal.style.display = "none";
+
+    }
+  }
+</script>
+
+</html>
